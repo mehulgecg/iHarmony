@@ -1,0 +1,31 @@
+[UIFont fontNamesForFamilyName:@"Optima"]
+
+    "Optima-ExtraBlack",
+    "Optima-Italic",
+    "Optima-Regular",
+    "Optima-BoldItalic",
+    "Optima-Bold"
+)
+
+[UIFont fontNamesForFamilyName:@"Helvetica"]
+    "Helvetica-LightOblique",
+    Helvetica,
+    "Helvetica-Oblique",
+    "Helvetica-BoldOblique",
+    "Helvetica-Bold",
+    "Helvetica-Light"
+)
+
+[UIFont fontNamesForFamilyName:@"Helvetica Neue"]
+    "HelveticaNeue-Bold",
+    "HelveticaNeue-CondensedBlack",
+    "HelveticaNeue-Medium",
+    HelveticaNeue,
+    "HelveticaNeue-Light",
+    "HelveticaNeue-CondensedBold",
+    "HelveticaNeue-LightItalic",
+    "HelveticaNeue-UltraLightItalic",
+    "HelveticaNeue-UltraLight",
+    "HelveticaNeue-BoldItalic",
+    "HelveticaNeue-Italic"
+)

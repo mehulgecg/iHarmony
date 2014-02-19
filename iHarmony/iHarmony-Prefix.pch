@@ -1,0 +1,37 @@
+//
+// Prefix header for all source files of the 'iHarmony' target in the 'iHarmony' project
+//
+
+#import "Constants.h"
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+  #import <Foundation/Foundation.h>
+  #import <QuartzCore/QuartzCore.h>
+  #import <AVFoundation/AVFoundation.h>
+  #import <Availability.h>
+  #import <objc/message.h>
+  #import <objc/runtime.h>
+#endif
+
+#ifdef DEBUG_D
+#define DLog(fmt, ...) NSLog((@"%s:%d " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(fmt, ...) // stubbed out
+#endif
+
+/*
+ *  System Versioning Preprocessor Macros
+ *
+ *  Example
+ *
+ * if (SYSTEM_VERSION_LESS_THAN(@"4.0")) { ... }
+ *
+ * if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"3.1.1")) { ... }
+ */
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
